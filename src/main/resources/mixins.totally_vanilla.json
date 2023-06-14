@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8.5-GTNH",
+  "package": "com.github.minecraft_ta.totally_vanilla.mixins",
+  "refmap": "mixins.totally_vanilla.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "GameRulesMixin",
+    "WorldMixin",
+    "WorldServerMixin"
+  ],
+  "client": [],
+  "server": []
+}
