@@ -1,8 +1,8 @@
 package com.github.minecraft_ta.totally_vanilla;
 
-import java.io.File;
-
 import net.minecraftforge.common.config.Configuration;
+
+import java.io.File;
 
 public class Config {
 
