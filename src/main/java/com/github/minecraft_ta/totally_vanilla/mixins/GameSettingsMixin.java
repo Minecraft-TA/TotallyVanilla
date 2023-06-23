@@ -18,10 +18,10 @@ public class GameSettingsMixin {
     private static void makeGuiScaleSlider(CallbackInfo ci) {
         GameSettings.Options guiScale = GameSettings.Options.GUI_SCALE;
 
-        ReflectionHelper.setPrivateValue(GameSettings.Options.class, guiScale, true, "enumFloat");
-        ReflectionHelper.setPrivateValue(GameSettings.Options.class, guiScale, 1.0f, "valueStep");
-//                ReflectionHelper.setPrivateValue(GameSettings.Options.class, value, 0.0f, "valueMin"); Default is zero
-        guiScale.setValueMax(5.0f);
+        ReflectionHelper.setPrivateValue(GameSettings.Options.class, guiScale, true, "enumFloat", "field_74385_A");
+        ReflectionHelper.setPrivateValue(GameSettings.Options.class, guiScale, 1.0f, "valueStep", "field_148270_M");
+//        ReflectionHelper.setPrivateValue(GameSettings.Options.class, value, 0.0f, "valueMin"); // Already 0
+//        guiScale.setValueMax(5.0f); // Set in GuiVideoSettingsMixin.initGui
     }
 
     @Inject(method = "setOptionFloatValue", at = @At("HEAD"), cancellable = true)
