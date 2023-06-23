@@ -10,6 +10,9 @@
     "WorldMixin",
     "WorldServerMixin"
   ],
-  "client": [],
+  "client": [
+    "GameSettingsMixin",
+    "GuiVideoSettingsMixin"
+  ],
   "server": []
 }

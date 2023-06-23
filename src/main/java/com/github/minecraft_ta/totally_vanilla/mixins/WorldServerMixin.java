@@ -16,7 +16,4 @@ public abstract class WorldServerMixin {
             ci.cancel();
         }
     }
-
-
-
 }
