@@ -12,7 +12,8 @@
   ],
   "client": [
     "GameSettingsMixin",
-    "GuiVideoSettingsMixin"
+    "GuiVideoSettingsMixin",
+    "ChunkProviderClientMixin"
   ],
   "server": []
 }
